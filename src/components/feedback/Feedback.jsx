@@ -1,5 +1,4 @@
-const Feedback = ({feedback}) => {
-  const { good, neutral, bad } = feedback;
+const Feedback = ({feedback: {good, neutral, bad}}) => {
   const totalFeedback  = good + neutral + bad;
   const positiveFeedback  = totalFeedback  ? Math.round((good / totalFeedback ) * 100) : 0;
 
